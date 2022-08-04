@@ -1,0 +1,8 @@
+--- 
+- hosts: all
+  name: "WebServer Deployment"
+  become: yes
+  roles:
+  - firewall
+  - webserver
+  - tomcat
